@@ -348,10 +348,10 @@ gsdk = {
         if($('#budget-range').length != 0){
             $( "#budget-range" ).slider({
             range: true,
-        		min: 50000,
-        		max: 1000000,
-            step: 50000,
-        		values: [300000,500000],
+        		min: 1000,
+        		max: 25000,
+            step: 1000,
+        		values: [1000,3000],
             create: function() {
               $("#budget-range-text").text("Budget Range: $" +
                 $(this).slider("values", 0 ).toLocaleString() + " - $" +
@@ -359,8 +359,8 @@ gsdk = {
               updateEstimates();
             },
             slide: function( event, ui ) {
-              $("#budget-range-text").text( "Budget Range: " +
-                ui.values[0].toLocaleString() + " - " +
+              $("#budget-range-text").text( "Budget Range: $" +
+                ui.values[0].toLocaleString() + " - $" +
                 ui.values[1].toLocaleString() );
               updateEstimates();
             }
