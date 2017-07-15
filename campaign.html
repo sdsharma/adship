@@ -22,6 +22,11 @@
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link href="assets/css/ct-paper.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
 		<style>
 			td{
 				text-align: center;
@@ -112,6 +117,7 @@
 									<tr><td>Viewers Per Day</td></tr>
 									<tr><td>A Statistic</td></tr>
 									<tr><td>Another Statistic</td></tr>
+									<tr><td>TV Schedule</td></tr>
 								</tbody>
 							</table>
 						</div>
@@ -127,6 +133,13 @@
 									<tr><td>5</td></tr>
 									<tr><td>69%</td></tr>
 									<tr><td>69%</td></tr>
+									<tr>
+										<td>
+											<button class="btn btn-fill btn-danger" data-toggle="modal" data-target="#myModal">
+										Launch demo modal
+										</button>
+									</td>
+								</tr>
 								</tbody>
 							</table>
 						</div>
@@ -142,6 +155,13 @@
 									<tr><td>5</td></tr>
 									<tr><td>69%</td></tr>
 									<tr><td>69%</td></tr>
+									<tr>
+										<td>
+											<button class="btn btn-fill btn-danger" data-toggle="modal" data-target="#myModal">
+										Launch demo modal
+										</button>
+									</td>
+								</tr>
 								</tbody>
 							</table>
 						</div>
@@ -157,211 +177,21 @@
 									<tr><td>5</td></tr>
 									<tr><td>69%</td></tr>
 									<tr><td>69%</td></tr>
+									<tr>
+										<td>
+											<button class="btn btn-fill btn-danger" data-toggle="modal" data-target="#myModal">
+										Launch demo modal
+										</button>
+									</td>
+								</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- Button trigger modal, modals must be placed outside the global wrapper -->
 
-    <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Email Statistics</h4>
-                        <p class="category">Last Campaign Performance</p>
-                    </div>
-                    <div class="content">
-                        <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Open
-                                <i class="fa fa-circle text-danger"></i> Bounce
-                                <i class="fa fa-circle text-warning"></i> Unsubscribe
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Users Behavior</h4>
-                        <p class="category">24 Hours performance</p>
-                    </div>
-                    <div class="content">
-                        <div id="chartHours" class="ct-chart"></div>
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Open
-                                <i class="fa fa-circle text-danger"></i> Click
-                                <i class="fa fa-circle text-warning"></i> Click Second Time
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card ">
-                    <div class="header">
-                        <h4 class="title">2014 Sales</h4>
-                        <p class="category">All products including Taxes</p>
-                    </div>
-                    <div class="content">
-                        <div id="chartActivity" class="ct-chart"></div>
-
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Tesla Model S
-                                <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-check"></i> Data information certified
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card ">
-                    <div class="header">
-                        <h4 class="title">Tasks</h4>
-                        <p class="category">Backend development</p>
-                    </div>
-                    <div class="content">
-                        <div class="table-full-width">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                            </label>
-                                        </td>
-                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                            </label>
-                                        </td>
-                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                            </label>
-                                        </td>
-                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                            </label>
-                                        </td>
-                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                            </label>
-                                        </td>
-                                        <td>Read "Following makes Medium better"</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                            </label>
-                                        </td>
-                                        <td>Unfollow 5 enemies from twitter</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="footer">
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 </div>
 
@@ -369,6 +199,297 @@
 
 <!-- Modal Bodies come here -->
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Select Ad Spots</h4>
+      </div>
+      <div class="modal-body">
+				<div class="cd-schedule loading">
+					<div class="timeline">
+						<ul>
+							<li><span>09:00</span></li>
+							<li><span>09:30</span></li>
+							<li><span>10:00</span></li>
+							<li><span>10:30</span></li>
+							<li><span>11:00</span></li>
+							<li><span>11:30</span></li>
+							<li><span>12:00</span></li>
+							<li><span>12:30</span></li>
+							<li><span>13:00</span></li>
+							<li><span>13:30</span></li>
+							<li><span>14:00</span></li>
+							<li><span>14:30</span></li>
+							<li><span>15:00</span></li>
+							<li><span>15:30</span></li>
+							<li><span>16:00</span></li>
+							<li><span>16:30</span></li>
+							<li><span>17:00</span></li>
+							<li><span>17:30</span></li>
+							<li><span>18:00</span></li>
+						</ul>
+					</div> <!-- .timeline -->
+
+					<div class="events">
+						<ul>
+							<li class="events-group">
+								<div class="top-info"><span>Monday</span></div>
+
+								<ul>
+									<li class="single-event" data-start="09:00" data-end="10:00" data-event="event-3">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="10:00" data-end="11:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">The Flash</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="11:00" data-end="13:30" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Christmas Special</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="13:30" data-end="14:30" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">Comedy</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="14:30" data-end="16:30" data-event="event-3">
+										<a href="#0">
+											<em class="event-name">Music</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="16:30" data-end="17:30" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Informative</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="17:30" data-end="18:30" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+								</ul>
+							</li>
+
+							<li class="events-group">
+								<div class="top-info"><span>Tuesday</span></div>
+
+								<ul>
+									<li class="single-event" data-start="09:00" data-end="10:00" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="10:00" data-end="12:00" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">The Fast and The Furious</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="12:00" data-end="13:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Comedy</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="13:00" data-end="14:00" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Informative</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="14:00" data-end="16:30" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">Spiderman</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="16:30" data-end="17:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Music</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="16:30" data-end="17:30" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Music</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="17:30" data-end="18:30" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="events-group">
+								<div class="top-info"><span>Wednesday</span></div>
+
+								<ul>
+									<li class="single-event" data-start="09:00" data-end="10:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="10:00" data-end="18:30" data-event="event-3">
+										<a href="#0">
+											<em class="event-name">Olympics</em>
+										</a>
+									</li>
+
+
+								</ul>
+							</li>
+
+							<li class="events-group">
+								<div class="top-info"><span>Thursday</span></div>
+
+								<ul>
+									<li class="single-event" data-start="09:00" data-end="10:00" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="10:00" data-end="12:00" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Classics</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="12:00" data-end="13:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Lunch Time with Bob</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="13:00" data-end="15:30" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">Baby Driver</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="15:30" data-end="16:30" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Comedy</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="16:30" data-end="17:30" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Music</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="17:30" data-end="18:30" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">News</em>
+										</a>
+									</li>
+
+								</ul>
+							</li>
+
+							<li class="events-group">
+								<div class="top-info"><span>Friday</span></div>
+
+								<ul>
+									<li class="single-event" data-start="09:00" data-end="11:00" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Extra Morning News</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="11:00" data-end="12:00" data-event="event-3">
+										<a href="#0">
+											<em class="event-name">Catch Up</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="12:00" data-end="14:30" data-event="event-1">
+										<a href="#0">
+											<em class="event-name">Avengers</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="14:30" data-end="16:00" data-event="event-2">
+										<a href="#0">
+											<em class="event-name">Informative</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="16:00" data-end="17:00" data-event="event-3">
+										<a href="#0">
+											<em class="event-name">Music</em>
+										</a>
+									</li>
+
+									<li class="single-event" data-start="17:00" data-end="18:30" data-event="event-4">
+										<a href="#0">
+											<em class="event-name">Round Up</em>
+										</a>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="event-modal">
+						<header class="header">
+							<div class="content">
+								<span class="event-date"></span>
+								<h3 class="event-name"></h3>
+							</div>
+
+							<div class="header-bg"></div>
+						</header>
+
+						<div class="body">
+							<div class="event-info"></div>
+							<div class="body-bg"></div>
+						</div>
+
+						<a href="#0" class="close">Close</a>
+					</div>
+
+					<div class="cover-layer"></div>
+				</div> <!-- .cd-schedule --> <!-- .cd-schedule -->
+				<script src="js/modernizr.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+				<script>
+					if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+				</script>
+				<script src="js/main.js"></script> <!-- Resource jQuery -->
+      </div>
+      <div class="modal-footer">
+        <div class="left-side">
+            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-side">
+            <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--   end modal -->
 
 
