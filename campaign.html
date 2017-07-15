@@ -28,6 +28,10 @@
 		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
 		<style>
+            body{
+                font-family: 'Montserrat', sans-serif;
+                background-color: #F7F7F8;
+            }
 			td{
 				text-align: center;
 			}
@@ -45,6 +49,29 @@
   height: 40px;
   margin-top: 10px;
   margin-left: 20px;
+}
+    .container{
+        width: 100%;
+    }
+        .form-div{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 33%;
+            display: inline-block;
+            text-align: center;
+        }
+        .slider-success .ui-widget-header {
+    background-color: #EB5E28;
+}
+.slider-success{
+    margin-left: 115px;
+}
+.card-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 		</style>
 
@@ -69,10 +96,14 @@
 		<div class="container">
 
 			<form class="container-fluid">
-				<div>
+                <div class="form-div">
+                    <div>
+                        <h3>Campaign Filters</h3>
 					<p>Date: <input type="text" id="datepicker"></p>
 				</div>
-				<div>
+                </div>
+                <div class="form-div">
+                    <div>
 					<p id="population-range-text" />
 					<div class="row">
 						<div id="population-range" class="col-md-6 slider-success" ></div>
@@ -85,8 +116,9 @@
 						<div id="age-range" class="col-md-6 slider-success" ></div>
 					</div>
 				</div>
-				<br>
-				<div>
+                </div>
+                <div class="form-div">
+                    <div>
 					<p id="duration-range-text" />
 					<div class="row">
 						<div id="duration-range" class="col-md-6 slider-success"></div>
@@ -99,7 +131,7 @@
 						<div id="budget-range" class="col-md-6 slider-success"></div>
 					</div>
 				</div>
-				<br>
+                </div>
 				<div>
 					<p id="estimate-text" />
 				</div>
@@ -107,8 +139,8 @@
 
 
 			<div class="row">
-				<div class="col-md-3">
-					<div class="card" style="box-shadow: none">
+				<div class="col-md-2">
+					<div class="card" style="box-shadow: none; background-color: #F7F7F8">
 						<img class="channel-logo"/>
 						<div class="content table-responsive table-full-width">
 							<table class="table table-hover table-striped">
@@ -124,7 +156,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card card-shadow">
 						<img class="channel-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/New_abc_gold.svg/1200px-New_abc_gold.svg.png"/>
 						<div class="content table-responsive table-full-width">
 							<table class="table table-hover table-striped">
@@ -146,7 +178,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card card-shadow">
 						<img class="channel-logo" src="https://vignette1.wikia.nocookie.net/fictionalcrossover/images/1/15/CBS.png/revision/latest?cb=20140212012438"/>
 						<div class="content table-responsive table-full-width">
 							<table class="table table-hover table-striped">
@@ -168,7 +200,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="card">
+					<div class="card card-shadow">
 						<img class="channel-logo" src="http://www.fox.com/sites/default/files/fox_logo_1.jpg"/>
 						<div class="content table-responsive table-full-width">
 							<table class="table table-hover table-striped">
