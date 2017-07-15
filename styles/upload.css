@@ -4,20 +4,23 @@ body{
 }
 
 .dropzone {
-    min-height: 80%;
+    min-height: 92%;
     border: 2px solid #EB5E28;
     background: white;
     padding: 20px 20px;
 }
 
 .btn-get-started{
+    position: absolute;
+    top: 11px;
+    right: 0;
     float: right;
     color: #FFFFFF;
     background-color: #EB5E28;
     border-radius: 20px;
     box-sizing: border-box;
     border-width: 2px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     padding: 7px 18px;
     -webkit-transition: all 150ms linear;
@@ -41,7 +44,7 @@ body{
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid transparent;
+    border: 1px solid #fff;
     margin-right: 20px;
 }
 .btn-get-started:hover{
