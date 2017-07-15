@@ -16,7 +16,7 @@ d3.csv("../data/nba.csv", function(error, data) {
   campaign_one_chart
     .height(300)
     .x(d3.scale.linear().domain([0,10]))
-    .y(d3.scale.linear().domain([50, 150]))
+    .y(d3.scale.linear().domain([50, 100]))
     .margins({top: 30, right: 50, bottom: 40, left: 50})
     .brushOn(false)
     .clipPadding(20)
@@ -42,7 +42,7 @@ d3.csv("../data/jenner.csv", function(error, data) {
   campaign_two_chart
     .height(300)
     .x(d3.scale.linear().domain([0,14]))
-    .y(d3.scale.linear().domain([50, 130]))
+    .y(d3.scale.linear().domain([50, 100]))
     .margins({top: 30, right: 50, bottom: 40, left: 50})
     .brushOn(false)
     .clipPadding(20)
