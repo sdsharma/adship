@@ -278,9 +278,9 @@ gsdk = {
           let highAge = $("#age-range").slider("values", 1 );
           let highDuration = $("#duration-range").slider("values", 1 );
           let highBudget = $("#budget-range").slider("values", 1 );
-          $("#first-estimate").text("$"+ ((lowBudget * lowAge * lowDuration * lowPopulation)/1000000000000).toLocaleString() + "K - $" + ((highBudget * highAge * highDuration * highPopulation)/1000000000000).toLocaleString()+"K");
-          $("#second-estimate").text("$"+ (0.8*(lowBudget * lowAge * lowDuration * lowPopulation)/1000000000000).toLocaleString() + "K - $" + (0.7*(highBudget * highAge * highDuration * highPopulation)/1000000000000).toLocaleString()+"K");
-          $("#third-estimate").text("$"+ (0.65*(lowBudget * lowAge * lowDuration * lowPopulation)/1000000000000).toLocaleString() + "K - $" + (0.75*(highBudget * highAge * highDuration * highPopulation)/1000000000000).toLocaleString()+"K");
+          $("#first-estimate").text("$"+ ((((lowPopulation/1000)*30/60)*lowDuration)/1000).toLocaleString() + "K - $" + ((((highPopulation/1000)*30/60)*highDuration)/1000).toLocaleString()+"K");
+          $("#second-estimate").text("$"+ (0.8*(((lowPopulation/1000)*30/60)*lowDuration)/1000).toLocaleString() + "K - $" + (0.7*(((highPopulation/1000)*30/60)*highDuration)/1000).toLocaleString()+"K");
+          $("#third-estimate").text("$"+ (0.65*(((lowPopulation/1000)*30/60)*lowDuration)/1000).toLocaleString() + "K - $" + (0.75*(((highPopulation/1000)*30/60)*highDuration)/1000).toLocaleString()+"K");
         };
         if($('#datepicker').length != 0){
           $( "#datepicker" ).datepicker();
