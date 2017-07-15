@@ -871,7 +871,7 @@ body > .navbar-collapse {
     padding-left: 65px; }
 
 .alert-info {
-  background-color: #63d8f1; }
+  background-color: #F3BB45 }
 
 .alert-success {
   background-color: #a1e82c; }
@@ -2857,4 +2857,8 @@ body > .navbar-collapse {
   color: #DDD;
   border-bottom-color: #DDD;
   border-top-color: #DDD;
+}
+.logo-img{
+  height: 40px;
+  margin-top: 10px;
 }
