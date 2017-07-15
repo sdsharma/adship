@@ -926,7 +926,7 @@
     fill: #75c3b6;
 }
 .navbar-header{
-    min-width: 120px;
+    min-width: 80px;
 }
 #notifications{
     background-color: #F5F2EC;

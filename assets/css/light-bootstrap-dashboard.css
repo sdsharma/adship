@@ -2858,3 +2858,7 @@ body > .navbar-collapse {
   border-bottom-color: #DDD;
   border-top-color: #DDD;
 }
+.logo-img{
+  height: 40px;
+  margin-top: 10px;
+}

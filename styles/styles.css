@@ -154,3 +154,12 @@ input{
     margin-top: 5px;
     margin-right: 10px;
 }
+.logo-img{
+    height: 80px;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 100;
+}
