@@ -91,206 +91,124 @@
                 </div>
             </nav>
 
-
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="header">
-                                    <h4 class="title">Email Statistics</h4>
-                                    <p class="category">Last Campaign Performance</p>
-                                </div>
-                                <div class="content">
-                                    <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                                    <div class="footer">
-                                        <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Open
-                                            <i class="fa fa-circle text-danger"></i> Bounce
-                                            <i class="fa fa-circle text-warning"></i> Unsubscribe
-                                        </div>
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Campaigns</h4>
+                                <p class="category">Current Campaigns</p>
                             </div>
-                        </div>
+                            <div class="content">
+															<div class="table-full-width">
+																	<table class="table">
+																			<tbody>
+																					<tr>
+																						<td>1</td>
+																						<td>Billboard: Downtown Los Angeles</td>
+																						<td>Awaiting RFP</td>
+																						<td class="td-actions text-right">
+																								<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+																										<i class="fa fa-edit"></i>
+																								</button>
+																						</td>
+																					</tr>
 
-                        <div class="col-md-8">
-                            <div class="card">
-                                <div class="header">
-                                    <h4 class="title">Users Behavior</h4>
-                                    <p class="category">24 Hours performance</p>
-                                </div>
-                                <div class="content">
-                                    <div id="chartHours" class="ct-chart"></div>
-                                    <div class="footer">
-                                        <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Open
-                                            <i class="fa fa-circle text-danger"></i> Click
-                                            <i class="fa fa-circle text-warning"></i> Click Second Time
-                                        </div>
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-history"></i> Updated 3 minutes ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+																					<tr>
+																						<td>2</td>
+																						<td>TV Spot: ABC NBA Finals</td>
+																						<td>Analytics</td>
+																						<td class="td-actions text-right">
+																								<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+																										<i class="fa fa-edit"></i>
+																								</button>
+																						</td>
+																					</tr>
 
+																					<tr>
+																						<td>3</td>
+																						<td>Influencer: Kylie Jenner</td>
+																						<td>Analytics</td>
+																						<td class="td-actions text-right">
+																								<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+																										<i class="fa fa-edit"></i>
+																								</button>
+																						</td>
+																					</tr>
 
+																					<tr>
+																						<td>4</td>
+																						<td>Print Ad: San Jose Mercury News</td>
+																						<td>New</td>
+																						<td class="td-actions text-right">
+																								<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+																										<i class="fa fa-edit"></i>
+																								</button>
+																						</td>
+																					</tr>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card ">
-                                <div class="header">
-                                    <h4 class="title">2014 Sales</h4>
-                                    <p class="category">All products including Taxes</p>
-                                </div>
-                                <div class="content">
-                                    <div id="chartActivity" class="ct-chart"></div>
+																					<tr>
+																						<td>5</td>
+																						<td>Radio Spot: Wild 94.9</td>
+																						<td>New</td>
+																						<td class="td-actions text-right">
+																								<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+																										<i class="fa fa-edit"></i>
+																								</button>
+																						</td>
+																					</tr>
+																			</tbody>
+																	</table>
 
-                                    <div class="footer">
-                                        <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Tesla Model S
-                                            <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                                        </div>
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-check"></i> Data information certified
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card ">
-                                <div class="header">
-                                    <h4 class="title">Tasks</h4>
-                                    <p class="category">Backend development</p>
-                                </div>
-                                <div class="content">
-                                    <div class="table-full-width">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox">
-                                                    </label>
-                                                    </td>
-                                                    <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                    </label>
-                                                    </td>
-                                                    <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                    </label>
-                                                    </td>
-                                                    <td>Flooded: One year later, assessing what was lost and what was found when
-                                                        a ravaging rain swept through metro Detroit
-                                                    </td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox">
-                                                    </label>
-                                                    </td>
-                                                    <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox">
-                                                    </label>
-                                                    </td>
-                                                    <td>Read "Following makes Medium better"</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="checkbox">
-                                                        <input type="checkbox" value="" data-toggle="checkbox">
-                                                    </label>
-                                                    </td>
-                                                    <td>Unfollow 5 enemies from twitter</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div class="footer">
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-history"></i> Updated 3 minutes ago
-                                        </div>
-                                    </div>
-                                </div>
+                              <div class="footer">
+                                  <hr>
+                                  <div class="stats">
+                                      <i class="fa fa-clock-o"></i> Updated 3 minutes ago
+                                  </div>
+                              </div>
                             </div>
                         </div>
                     </div>
+									</div>
+
+                  <div class="col-md-6">
+                      <div class="card">
+                          <div class="header">
+                              <h4 class="title">TV Spot: ABC NBA Finals</h4>
+                              <p class="category">Jun 12, 2017: 10 days</p>
+                          </div>
+                          <div class="content">
+                              <div id="campaignOne"></div>
+                              <div class="footer">
+                                  <hr>
+                                  <div class="stats">
+                                      <i class="fa fa-history"></i> Updated 3 minutes ago
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+										<div class="card">
+												<div class="header">
+														<h4 class="title">Influencer: Kylie Jenner</h4>
+														<p class="category">Jan 20, 2017: 14 Days</p>
+												</div>
+												<div class="content">
+														<div id="campaignTwo"></div>
+														<div class="footer">
+																<hr>
+																<div class="stats">
+																		<i class="fa fa-history"></i> Updated 3 minutes ago
+																</div>
+														</div>
+												</div>
+										</div>
+									</div>
                 </div>
             </div>
 
@@ -311,20 +229,26 @@
                 <div class="modal-body">
                     <p>To get started on your first advertising campaign, please provide a name for your campaign and the medium
                         in which you would like to advertise.</p>
-                    Campaign Name: <input type="text" placeholder="Name"><br/><br/> Select Your Medium:<br/><br/> Online
-                    Mediums
-                    <br/>
-                    <input type="radio" name="medium" value="fb"> Facebook Ads<br>
-                    <input type="radio" name="medium" value="twitter"> Twitter Ads<br>
-                    <input type="radio" name="medium" value="google"> Google Ads<br>
-                    <input type="radio" name="medium" value="yelp"> Yelp Ads<br>
-                    <input type="radio" name="medium" value="insta"> Instagram Ads<br>
-                    <input type="radio" name="medium" value="linkedin"> LinkedIn Ads<br><br/> Traditional Mediums<br/>
-                    <input type="radio" name="medium" value="bill"> Billboards<br>
-                    <input type="radio" name="medium" value="print"> Print Advertising<br>
-                    <input type="radio" name="medium" value="radio"> Radio<br>
-                    <input type="radio" name="medium" value="tv"> TV<br><br>
-                    <input type="radio" name="medium" value="native"> Native Advertising<br><br> Video Advertising<br/>
+                    Campaign Name: <input type="text" placeholder="Name"><br/><br/> Select Your Medium:<br/><br/>
+                    <div class="half">
+                        <b>Online Mediums</b>
+                        <br/>
+                        <input type="radio" name="medium" value="fb"> Facebook Ads<br>
+                        <input type="radio" name="medium" value="twitter"> Twitter Ads<br>
+                        <input type="radio" name="medium" value="google"> Google Ads<br>
+                        <input type="radio" name="medium" value="yelp"> Yelp Ads<br>
+                        <input type="radio" name="medium" value="insta"> Instagram Ads<br>
+                        <input type="radio" name="medium" value="linkedin"> LinkedIn Ads<br><br/>
+                    </div>
+                    <div class="half">
+                        <b>Traditional Mediums</b><br/>
+                        <input type="radio" name="medium" value="bill"> Billboards<br>
+                        <input type="radio" name="medium" value="print"> Print Advertising<br>
+                        <input type="radio" name="medium" value="radio"> Radio<br>
+                        <input type="radio" name="medium" value="tv"> TV<br><br>
+                        <input type="radio" name="medium" value="native"> <b>Native Advertising</b><br><br>
+                    </div>
+                    <b>Video Advertising</b><br/>
                     <input type="radio" name="medium" value="bill"> Banner<br>
                     <input type="radio" name="medium" value="print"> In Page<br>
                     <input type="radio" name="medium" value="radio"> In App<br>
@@ -351,9 +275,12 @@
 
 <!--  Checkbox, Radio & Switch Plugins -->
 <script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
-
-<!--  Charts Plugin -->
-<script src="assets/js/chartist.min.js"></script>
+	<!--  Charts -->
+	<script src="assets/js/chartist.min.js"></script>
+	<script src="../js/d3.js"></script>
+  <script src="../js/crossfilter.js"></script>
+  <script src="../js/dc.js"></script>
+  <script src="../js/charts.js"></script>
 
 <!--  Notifications Plugin    -->
 <script src="assets/js/bootstrap-notify.js"></script>
@@ -367,14 +294,11 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        demo.initChartist();
-
-        $.notify({
-            icon: 'pe-7s-pin',
-            message: "Welcome to <b>AdShip</b> - a centralized advertisement distribution network for businesses and advertisers!"
+	<script type="text/javascript">
+    	$(document).ready(function(){
+        	$.notify({
+            	 icon: 'pe-7s-pin',
+            	 message: "Welcome to <b>AdShip</b>, we help you connect with advertising channels so you can spread your brand worldwide!"
 
         }, {
                 type: 'info',

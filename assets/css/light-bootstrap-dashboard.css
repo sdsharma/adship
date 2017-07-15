@@ -2862,3 +2862,7 @@ body > .navbar-collapse {
   height: 40px;
   margin-top: 10px;
 }
+.half{
+  width: 49%;
+  display: inline-block;
+}
