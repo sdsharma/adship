@@ -21,3 +21,14 @@
   transform: translate(-50%,-50%);
   filter: blur(3px);
 }
+.callout{
+    position: fixed;
+    top: 35%;
+    left: 11%;
+    z-index: 1;
+    color: #fff;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+}
