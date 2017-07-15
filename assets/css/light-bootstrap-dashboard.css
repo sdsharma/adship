@@ -53,7 +53,7 @@ td,
 button.close {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -198,6 +198,7 @@ body > .navbar-collapse {
   background-position: center center; }
   .sidebar .sidebar-wrapper,
   body > .navbar-collapse .sidebar-wrapper {
+    background-color: #EB5E28;
     position: relative;
     max-height: calc(100vh - 75px);
     min-height: 100%;
@@ -227,7 +228,7 @@ body > .navbar-collapse {
       margin: 10px 10px;
       color: #FFFFFF;
       line-height: 20px;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: 'Montserrat', sans-serif; }
     .sidebar .logo .simple-text,
     body > .navbar-collapse .logo .simple-text {
       text-transform: uppercase;
@@ -310,7 +311,7 @@ body > .navbar-collapse {
       margin: 10px 10px;
       color: #FFFFFF;
       line-height: 20px;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: 'Montserrat', sans-serif; }
     .sidebar .logo .simple-text,
     body > .navbar-collapse .logo .simple-text {
       text-transform: uppercase;
@@ -431,7 +432,7 @@ body > .navbar-collapse {
   position: relative;
   z-index: 2;
   float: right;
-  width: calc(100% - 260px);
+  width: 100%;
   min-height: 100%; }
   .main-panel > .content {
     padding: 30px 15px;
@@ -870,7 +871,7 @@ body > .navbar-collapse {
     padding-left: 65px; }
 
 .alert-info {
-  background-color: #63d8f1; }
+  background-color: #F3BB45 }
 
 .alert-success {
   background-color: #a1e82c; }
@@ -1392,9 +1393,6 @@ body > .navbar-collapse {
   .navbar-toggle.navbar-default .navbar-toggle:hover, .navbar-toggle.navbar-default .navbar-toggle:focus {
     background-color: transparent; }
 
-.footer {
-  background-color: #FFFFFF;
-  line-height: 20px; }
   .footer nav > ul {
     list-style: none;
     margin: 0;
@@ -2813,3 +2811,50 @@ body > .navbar-collapse {
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch; } }
+
+.nav-bg{
+  background-color: #EB5E28;
+  color: #fff;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:not(.btn) {
+  color: #fff;
+}
+
+.bottom-nav{
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #EB5E28;
+    z-index: 200;
+}
+
+.footer{
+    color: #fff;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:not(.btn):hover{
+  color: #DDD;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret{
+  color: #DDD;
+  border-bottom-color: #DDD;
+  border-top-color: #DDD;
+}
