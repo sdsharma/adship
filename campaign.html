@@ -95,6 +95,16 @@
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
+        .center{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 16px;
+            width: 30%;
+        }
+
         .btn-get-started {
             position: absolute;
             top: 11px;
@@ -149,6 +159,12 @@
     <!--    navbar come here          -->
     <div class="nav">
         <img class="logo-img" src="/assets/logo.png">
+    </div>
+
+    <div class="progress center">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+        <span class="sr-only">66% Complete</span>
+      </div>
     </div>
 
     <a href="./sent"><button class="btn-get-started">Confirm Request</button></a>
