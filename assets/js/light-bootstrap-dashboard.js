@@ -79,46 +79,24 @@ lbd = {
     initRightMenu: function(){
          if(!navbar_initialized){
             $navbar = $('nav').find('.navbar-collapse').first().clone(true);
-
-            $sidebar = $('.sidebar');
-            sidebar_color = $sidebar.data('color');
-
-            $logo = $sidebar.find('.logo').first();
-            logo_content = $logo[0].outerHTML;
-
-            ul_content = '';
-
-            $navbar.attr('data-color',sidebar_color);
-
             //add the content from the regular header to the right menu
             $navbar.children('ul').each(function(){
                 content_buff = $(this).html();
-                ul_content = ul_content + content_buff;
             });
 
             // add the content from the sidebar to the right menu
-            content_buff = $sidebar.find('.nav').html();
-            ul_content = ul_content + content_buff;
 
 
             ul_content = '<div class="sidebar-wrapper">' +
                             '<ul class="nav navbar-nav">' +
-                                ul_content +
                             '</ul>' +
                           '</div>';
 
-            navbar_content = logo_content + ul_content;
+            navbar_content = ul_content;
 
             $navbar.html(navbar_content);
 
             $('body').append($navbar);
-
-            background_image = $sidebar.data('image');
-            if(background_image != undefined){
-                $navbar.css('background',"url('" + background_image + "')")
-                       .removeAttr('data-nav-image')
-                       .addClass('has-image');
-            }
 
 
              $toggle = $('.navbar-toggle');
